@@ -1,0 +1,16 @@
+PODS:
+  - OCMock (3.4.3)
+
+DEPENDENCIES:
+  - OCMock (~> 3.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OCMock
+
+SPEC CHECKSUMS:
+  OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
+
+PODFILE CHECKSUM: b32b8a1184bb780dc7f886858172bbd88deab385
+
+COCOAPODS: 1.6.1

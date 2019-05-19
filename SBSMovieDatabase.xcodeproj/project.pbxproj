@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BD6DD2FC173B8DFEB8FA321 /* libPods-SBSMovieDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C25FAB8A2C89D288500A019 /* libPods-SBSMovieDatabase.a */; };
+		781D61A4227F07D300AF0912 /* SBSMovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 781D61A3227F07D300AF0912 /* SBSMovieCollectionViewCell.m */; };
+		78435D3D2283543600534724 /* SBSImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D3C2283543600534724 /* SBSImageCache.m */; };
+		78435D402283763100534724 /* SBSMovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D3F2283763100534724 /* SBSMovieDetailViewController.m */; };
+		78435D4622856A6A00534724 /* SBSMovieDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D4522856A6A00534724 /* SBSMovieDetailInfoCell.m */; };
+		78435D4922856AEF00534724 /* SBSMovieDetailOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D4822856AEF00534724 /* SBSMovieDetailOverviewCell.m */; };
+		78435D742286CB6E00534724 /* SBSMovieDetailRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D732286CB6E00534724 /* SBSMovieDetailRatingCell.m */; };
+		78435D782286DA2F00534724 /* SBSDetailMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435D772286DA2F00534724 /* SBSDetailMovie.m */; };
+		78435DD5228AF08A00534724 /* SBSFavouriteMoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */; };
+		78435DD9228AF11200534724 /* SBSBaseMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DD8228AF11200534724 /* SBSBaseMovieCell.m */; };
+		78435DEA228C191300534724 /* FavouriteMovie+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DE8228C191300534724 /* FavouriteMovie+CoreDataClass.m */; };
+		78435DEB228C191300534724 /* FavouriteMovie+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DE9228C191300534724 /* FavouriteMovie+CoreDataProperties.m */; };
+		78435DEE228C7D5A00534724 /* SBSSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DED228C7D5A00534724 /* SBSSearchResultsViewController.m */; };
+		78435DFA228D7ACD00534724 /* SBSHomeCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435DF9228D7ACD00534724 /* SBSHomeCollectionViewHeader.m */; };
+		78435E06228DCDC600534724 /* SBSCoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435E05228DCDC600534724 /* SBSCoreDataService.m */; };
+		78435E0A228F486300534724 /* SBSMovieDetailCastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435E09228F486300534724 /* SBSMovieDetailCastCell.m */; };
+		78435E0D228F48E000534724 /* SBSActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78435E0C228F48E000534724 /* SBSActor.m */; };
+		784862E4227F6AEF009642DC /* SBSMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 784862E3227F6AEF009642DC /* SBSMovie.m */; };
+		784862E7227F6D2A009642DC /* SBSNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 784862E6227F6D2A009642DC /* SBSNetworkService.m */; };
+		784862EA227F6D43009642DC /* SBSMovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 784862E9227F6D43009642DC /* SBSMovieService.m */; };
+		784862F522802A31009642DC /* UIImageView+SBSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 784862F422802A31009642DC /* UIImageView+SBSNetwork.m */; };
+		787EB30F22914BB0006B84DC /* SBSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 787EB30E22914BB0006B84DC /* SBSCoreDataStack.m */; };
+		787EB32C22916072006B84DC /* TestNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 787EB32B22916072006B84DC /* TestNetworkService.m */; };
+		788D4D4B2270DA30002074BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D4A2270DA30002074BC /* AppDelegate.m */; };
+		788D4D542270DA30002074BC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D522270DA30002074BC /* Model.xcdatamodeld */; };
+		788D4D562270DA32002074BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788D4D552270DA32002074BC /* Assets.xcassets */; };
+		788D4D592270DA32002074BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788D4D572270DA32002074BC /* LaunchScreen.storyboard */; };
+		788D4D5C2270DA32002074BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D5B2270DA32002074BC /* main.m */; };
+		788D4D802270DB3A002074BC /* SBSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D7F2270DB3A002074BC /* SBSHomeViewController.m */; };
+		788D4D852270E455002074BC /* UIColor+SBSCustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D842270E455002074BC /* UIColor+SBSCustomColors.m */; };
+		788D4D882270F352002074BC /* SBSMenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4D872270F352002074BC /* SBSMenuBar.m */; };
+		788D4DCE2271C400002074BC /* SBSMenuBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D4DCD2271C400002074BC /* SBSMenuBarCell.m */; };
+		78D7526C229167A2007A064E /* TestMovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D7526B229167A2007A064E /* TestMovieService.m */; };
+		78D7526E22916A12007A064E /* TestCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D7526D22916A12007A064E /* TestCoreDataStack.m */; };
+		78D752752291A67B007A064E /* SBSTopRatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752742291A67B007A064E /* SBSTopRatedViewController.m */; };
+		78D7527E2291BDA1007A064E /* SBSFavouriteMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */; };
+		78D752812291BF6F007A064E /* SBSTopRatedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752802291BF6F007A064E /* SBSTopRatedCell.m */; };
+		78D752832291C9BA007A064E /* TestExecuteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752822291C9BA007A064E /* TestExecuteRequest.m */; };
+		78D752892291E263007A064E /* SBSNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752882291E263007A064E /* SBSNetworkConstants.m */; };
+		EF1A21C7247751E6CDAD5977 /* libPods-SBSMovieDatabaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8156EC0070A2024EAEB72E /* libPods-SBSMovieDatabaseTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		787EB3262291604E006B84DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 788D4D3E2270DA2F002074BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788D4D452270DA30002074BC;
+			remoteInfo = SBSMovieDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		787EB319229158F4006B84DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C25FAB8A2C89D288500A019 /* libPods-SBSMovieDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBSMovieDatabase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		286DC8E6B9D4E4534B24D68A /* Pods-SBSMovieDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabase.release.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabase/Pods-SBSMovieDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		781D61A2227F07D300AF0912 /* SBSMovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieCollectionViewCell.h; sourceTree = "<group>"; };
+		781D61A3227F07D300AF0912 /* SBSMovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieCollectionViewCell.m; sourceTree = "<group>"; };
+		78435D3B2283543600534724 /* SBSImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSImageCache.h; sourceTree = "<group>"; };
+		78435D3C2283543600534724 /* SBSImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSImageCache.m; sourceTree = "<group>"; };
+		78435D3E2283763100534724 /* SBSMovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieDetailViewController.h; sourceTree = "<group>"; };
+		78435D3F2283763100534724 /* SBSMovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieDetailViewController.m; sourceTree = "<group>"; };
+		78435D4422856A6A00534724 /* SBSMovieDetailInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieDetailInfoCell.h; sourceTree = "<group>"; };
+		78435D4522856A6A00534724 /* SBSMovieDetailInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieDetailInfoCell.m; sourceTree = "<group>"; };
+		78435D4722856AEF00534724 /* SBSMovieDetailOverviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieDetailOverviewCell.h; sourceTree = "<group>"; };
+		78435D4822856AEF00534724 /* SBSMovieDetailOverviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieDetailOverviewCell.m; sourceTree = "<group>"; };
+		78435D722286CB6E00534724 /* SBSMovieDetailRatingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieDetailRatingCell.h; sourceTree = "<group>"; };
+		78435D732286CB6E00534724 /* SBSMovieDetailRatingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieDetailRatingCell.m; sourceTree = "<group>"; };
+		78435D762286DA2F00534724 /* SBSDetailMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSDetailMovie.h; sourceTree = "<group>"; };
+		78435D772286DA2F00534724 /* SBSDetailMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSDetailMovie.m; sourceTree = "<group>"; };
+		78435DA12288689C00534724 /* SetupMovieProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupMovieProtocol.h; sourceTree = "<group>"; };
+		78435DD3228AF08A00534724 /* SBSFavouriteMoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSFavouriteMoviesViewController.h; sourceTree = "<group>"; };
+		78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSFavouriteMoviesViewController.m; sourceTree = "<group>"; };
+		78435DD7228AF11200534724 /* SBSBaseMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBSBaseMovieCell.h; path = ViewControllers/SBSBaseMovieCell.h; sourceTree = "<group>"; };
+		78435DD8228AF11200534724 /* SBSBaseMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBSBaseMovieCell.m; path = ViewControllers/SBSBaseMovieCell.m; sourceTree = "<group>"; };
+		78435DE6228C191300534724 /* FavouriteMovie+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavouriteMovie+CoreDataProperties.h"; sourceTree = "<group>"; };
+		78435DE7228C191300534724 /* FavouriteMovie+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavouriteMovie+CoreDataClass.h"; sourceTree = "<group>"; };
+		78435DE8228C191300534724 /* FavouriteMovie+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavouriteMovie+CoreDataClass.m"; sourceTree = "<group>"; };
+		78435DE9228C191300534724 /* FavouriteMovie+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavouriteMovie+CoreDataProperties.m"; sourceTree = "<group>"; };
+		78435DEC228C7D5A00534724 /* SBSSearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSSearchResultsViewController.h; sourceTree = "<group>"; };
+		78435DED228C7D5A00534724 /* SBSSearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSSearchResultsViewController.m; sourceTree = "<group>"; };
+		78435DF8228D7ACD00534724 /* SBSHomeCollectionViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSHomeCollectionViewHeader.h; sourceTree = "<group>"; };
+		78435DF9228D7ACD00534724 /* SBSHomeCollectionViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSHomeCollectionViewHeader.m; sourceTree = "<group>"; };
+		78435E01228DCB6700534724 /* SBSCoreDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSCoreDataProtocol.h; sourceTree = "<group>"; };
+		78435E04228DCDC600534724 /* SBSCoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSCoreDataService.h; sourceTree = "<group>"; };
+		78435E05228DCDC600534724 /* SBSCoreDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSCoreDataService.m; sourceTree = "<group>"; };
+		78435E08228F486300534724 /* SBSMovieDetailCastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieDetailCastCell.h; sourceTree = "<group>"; };
+		78435E09228F486300534724 /* SBSMovieDetailCastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieDetailCastCell.m; sourceTree = "<group>"; };
+		78435E0B228F48E000534724 /* SBSActor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSActor.h; sourceTree = "<group>"; };
+		78435E0C228F48E000534724 /* SBSActor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSActor.m; sourceTree = "<group>"; };
+		784862E2227F6AEF009642DC /* SBSMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovie.h; sourceTree = "<group>"; };
+		784862E3227F6AEF009642DC /* SBSMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovie.m; sourceTree = "<group>"; };
+		784862E5227F6D2A009642DC /* SBSNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSNetworkService.h; sourceTree = "<group>"; };
+		784862E6227F6D2A009642DC /* SBSNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSNetworkService.m; sourceTree = "<group>"; };
+		784862E8227F6D43009642DC /* SBSMovieService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMovieService.h; sourceTree = "<group>"; };
+		784862E9227F6D43009642DC /* SBSMovieService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMovieService.m; sourceTree = "<group>"; };
+		784862F322802A31009642DC /* UIImageView+SBSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SBSNetwork.h"; sourceTree = "<group>"; };
+		784862F422802A31009642DC /* UIImageView+SBSNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SBSNetwork.m"; sourceTree = "<group>"; };
+		7862F0E33CB875E242FE7F07 /* Pods-SBSMovieDatabaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabaseTests.debug.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabaseTests/Pods-SBSMovieDatabaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		787EB30D22914BB0006B84DC /* SBSCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSCoreDataStack.h; sourceTree = "<group>"; };
+		787EB30E22914BB0006B84DC /* SBSCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSCoreDataStack.m; sourceTree = "<group>"; };
+		787EB3212291604E006B84DC /* SBSMovieDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBSMovieDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		787EB3252291604E006B84DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787EB32B22916072006B84DC /* TestNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNetworkService.m; sourceTree = "<group>"; };
+		788D4D462270DA30002074BC /* SBSMovieDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBSMovieDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		788D4D492270DA30002074BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		788D4D4A2270DA30002074BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		788D4D532270DA30002074BC /* SBSMoviewDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBSMoviewDatabase.xcdatamodel; sourceTree = "<group>"; };
+		788D4D552270DA32002074BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		788D4D582270DA32002074BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		788D4D5A2270DA32002074BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788D4D5B2270DA32002074BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		788D4D7E2270DB3A002074BC /* SBSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSHomeViewController.h; sourceTree = "<group>"; };
+		788D4D7F2270DB3A002074BC /* SBSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSHomeViewController.m; sourceTree = "<group>"; };
+		788D4D832270E455002074BC /* UIColor+SBSCustomColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SBSCustomColors.h"; sourceTree = "<group>"; };
+		788D4D842270E455002074BC /* UIColor+SBSCustomColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SBSCustomColors.m"; sourceTree = "<group>"; };
+		788D4D862270F352002074BC /* SBSMenuBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMenuBar.h; sourceTree = "<group>"; };
+		788D4D872270F352002074BC /* SBSMenuBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMenuBar.m; sourceTree = "<group>"; };
+		788D4DCC2271C400002074BC /* SBSMenuBarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSMenuBarCell.h; sourceTree = "<group>"; };
+		788D4DCD2271C400002074BC /* SBSMenuBarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSMenuBarCell.m; sourceTree = "<group>"; };
+		78D7526B229167A2007A064E /* TestMovieService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMovieService.m; sourceTree = "<group>"; };
+		78D7526D22916A12007A064E /* TestCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataStack.m; sourceTree = "<group>"; };
+		78D752732291A67B007A064E /* SBSTopRatedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSTopRatedViewController.h; sourceTree = "<group>"; };
+		78D752742291A67B007A064E /* SBSTopRatedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSTopRatedViewController.m; sourceTree = "<group>"; };
+		78D7527C2291BDA1007A064E /* SBSFavouriteMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSFavouriteMovieCell.h; sourceTree = "<group>"; };
+		78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSFavouriteMovieCell.m; sourceTree = "<group>"; };
+		78D7527F2291BF6F007A064E /* SBSTopRatedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSTopRatedCell.h; sourceTree = "<group>"; };
+		78D752802291BF6F007A064E /* SBSTopRatedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSTopRatedCell.m; sourceTree = "<group>"; };
+		78D752822291C9BA007A064E /* TestExecuteRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestExecuteRequest.m; sourceTree = "<group>"; };
+		78D752882291E263007A064E /* SBSNetworkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSNetworkConstants.m; sourceTree = "<group>"; };
+		839B29683F1CB156676309CF /* Pods-SBSMovieDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabase.debug.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabase/Pods-SBSMovieDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8156EC0070A2024EAEB72E /* libPods-SBSMovieDatabaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBSMovieDatabaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A916A4304137AF93150B9A /* Pods-SBSMovieDatabaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabaseTests.release.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabaseTests/Pods-SBSMovieDatabaseTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787EB31E2291604E006B84DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A21C7247751E6CDAD5977 /* libPods-SBSMovieDatabaseTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788D4D432270DA30002074BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD6DD2FC173B8DFEB8FA321 /* libPods-SBSMovieDatabase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		781D619A227EEAC200AF0912 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78D7528A2291E3BE007A064E /* SearchViewController */,
+				78D752722291A65B007A064E /* TopRatedViewController */,
+				78435D422284A46500534724 /* HomeViewController */,
+				78435DD6228AF09700534724 /* FavouriteMoviewViewController */,
+				78435D432284A47500534724 /* MovieDetailViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		781D619E227F008000AF0912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				781D61A5227F514C00AF0912 /* MenuBar */,
+				781D61A2227F07D300AF0912 /* SBSMovieCollectionViewCell.h */,
+				781D61A3227F07D300AF0912 /* SBSMovieCollectionViewCell.m */,
+				78435DD7228AF11200534724 /* SBSBaseMovieCell.h */,
+				78435DD8228AF11200534724 /* SBSBaseMovieCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		781D61A5227F514C00AF0912 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				788D4D862270F352002074BC /* SBSMenuBar.h */,
+				788D4D872270F352002074BC /* SBSMenuBar.m */,
+				788D4DCC2271C400002074BC /* SBSMenuBarCell.h */,
+				788D4DCD2271C400002074BC /* SBSMenuBarCell.m */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		781D61A6227F51D400AF0912 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				781D61A7227F51F400AF0912 /* NetworkConstants */,
+				78435D3B2283543600534724 /* SBSImageCache.h */,
+				78435D3C2283543600534724 /* SBSImageCache.m */,
+				784862E5227F6D2A009642DC /* SBSNetworkService.h */,
+				784862E6227F6D2A009642DC /* SBSNetworkService.m */,
+				784862E8227F6D43009642DC /* SBSMovieService.h */,
+				784862E9227F6D43009642DC /* SBSMovieService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		781D61A7227F51F400AF0912 /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				78D752882291E263007A064E /* SBSNetworkConstants.m */,
+			);
+			name = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		781D61AD227F6A2500AF0912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				784862E2227F6AEF009642DC /* SBSMovie.h */,
+				784862E3227F6AEF009642DC /* SBSMovie.m */,
+				78435D762286DA2F00534724 /* SBSDetailMovie.h */,
+				78435D772286DA2F00534724 /* SBSDetailMovie.m */,
+				78435E0B228F48E000534724 /* SBSActor.h */,
+				78435E0C228F48E000534724 /* SBSActor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		78435D422284A46500534724 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				788D4D7E2270DB3A002074BC /* SBSHomeViewController.h */,
+				788D4D7F2270DB3A002074BC /* SBSHomeViewController.m */,
+				78435DF8228D7ACD00534724 /* SBSHomeCollectionViewHeader.h */,
+				78435DF9228D7ACD00534724 /* SBSHomeCollectionViewHeader.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		78435D432284A47500534724 /* MovieDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78435D3E2283763100534724 /* SBSMovieDetailViewController.h */,
+				78435D3F2283763100534724 /* SBSMovieDetailViewController.m */,
+				78435DA12288689C00534724 /* SetupMovieProtocol.h */,
+				78435D4422856A6A00534724 /* SBSMovieDetailInfoCell.h */,
+				78435D4522856A6A00534724 /* SBSMovieDetailInfoCell.m */,
+				78435D4722856AEF00534724 /* SBSMovieDetailOverviewCell.h */,
+				78435D4822856AEF00534724 /* SBSMovieDetailOverviewCell.m */,
+				78435D722286CB6E00534724 /* SBSMovieDetailRatingCell.h */,
+				78435D732286CB6E00534724 /* SBSMovieDetailRatingCell.m */,
+				78435E08228F486300534724 /* SBSMovieDetailCastCell.h */,
+				78435E09228F486300534724 /* SBSMovieDetailCastCell.m */,
+			);
+			path = MovieDetailViewController;
+			sourceTree = "<group>";
+		};
+		78435DD6228AF09700534724 /* FavouriteMoviewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78435DD3228AF08A00534724 /* SBSFavouriteMoviesViewController.h */,
+				78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */,
+				78D7527C2291BDA1007A064E /* SBSFavouriteMovieCell.h */,
+				78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */,
+			);
+			name = FavouriteMoviewViewController;
+			sourceTree = "<group>";
+		};
+		78435E07228F395600534724 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				784862F322802A31009642DC /* UIImageView+SBSNetwork.h */,
+				784862F422802A31009642DC /* UIImageView+SBSNetwork.m */,
+				788D4D832270E455002074BC /* UIColor+SBSCustomColors.h */,
+				788D4D842270E455002074BC /* UIColor+SBSCustomColors.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		787EB31422914F1D006B84DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C25FAB8A2C89D288500A019 /* libPods-SBSMovieDatabase.a */,
+				8A8156EC0070A2024EAEB72E /* libPods-SBSMovieDatabaseTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		787EB3222291604E006B84DC /* SBSMovieDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D752842291CDC3007A064E /* Network */,
+				78D752852291CDD3007A064E /* CoreData */,
+				787EB3252291604E006B84DC /* Info.plist */,
+			);
+			path = SBSMovieDatabaseTests;
+			sourceTree = "<group>";
+		};
+		788D4D3D2270DA2F002074BC = {
+			isa = PBXGroup;
+			children = (
+				788D4D482270DA30002074BC /* SBSMovieDatabase */,
+				787EB3222291604E006B84DC /* SBSMovieDatabaseTests */,
+				788D4D472270DA30002074BC /* Products */,
+				787EB31422914F1D006B84DC /* Frameworks */,
+				E6102E26AC2FB4AECF0E97CC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		788D4D472270DA30002074BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				788D4D462270DA30002074BC /* SBSMovieDatabase.app */,
+				787EB3212291604E006B84DC /* SBSMovieDatabaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		788D4D482270DA30002074BC /* SBSMovieDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				78D7528E2291E897007A064E /* CoreData */,
+				78435E07228F395600534724 /* Categories */,
+				781D61AD227F6A2500AF0912 /* Model */,
+				781D61A6227F51D400AF0912 /* Service */,
+				781D619E227F008000AF0912 /* View */,
+				781D619A227EEAC200AF0912 /* ViewControllers */,
+				788D4D492270DA30002074BC /* AppDelegate.h */,
+				788D4D4A2270DA30002074BC /* AppDelegate.m */,
+				788D4D552270DA32002074BC /* Assets.xcassets */,
+				788D4D572270DA32002074BC /* LaunchScreen.storyboard */,
+				788D4D5A2270DA32002074BC /* Info.plist */,
+				788D4D5B2270DA32002074BC /* main.m */,
+			);
+			path = SBSMovieDatabase;
+			sourceTree = "<group>";
+		};
+		78D752722291A65B007A064E /* TopRatedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78D752732291A67B007A064E /* SBSTopRatedViewController.h */,
+				78D752742291A67B007A064E /* SBSTopRatedViewController.m */,
+				78D7527F2291BF6F007A064E /* SBSTopRatedCell.h */,
+				78D752802291BF6F007A064E /* SBSTopRatedCell.m */,
+			);
+			path = TopRatedViewController;
+			sourceTree = "<group>";
+		};
+		78D752842291CDC3007A064E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78D752822291C9BA007A064E /* TestExecuteRequest.m */,
+				787EB32B22916072006B84DC /* TestNetworkService.m */,
+				78D7526B229167A2007A064E /* TestMovieService.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		78D752852291CDD3007A064E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				78D7526D22916A12007A064E /* TestCoreDataStack.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		78D7528A2291E3BE007A064E /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78435DEC228C7D5A00534724 /* SBSSearchResultsViewController.h */,
+				78435DED228C7D5A00534724 /* SBSSearchResultsViewController.m */,
+			);
+			name = SearchViewController;
+			sourceTree = "<group>";
+		};
+		78D7528E2291E897007A064E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				78435DE6228C191300534724 /* FavouriteMovie+CoreDataProperties.h */,
+				78435DE7228C191300534724 /* FavouriteMovie+CoreDataClass.h */,
+				78435DE8228C191300534724 /* FavouriteMovie+CoreDataClass.m */,
+				78435DE9228C191300534724 /* FavouriteMovie+CoreDataProperties.m */,
+				788D4D522270DA30002074BC /* Model.xcdatamodeld */,
+				78435E01228DCB6700534724 /* SBSCoreDataProtocol.h */,
+				78435E04228DCDC600534724 /* SBSCoreDataService.h */,
+				78435E05228DCDC600534724 /* SBSCoreDataService.m */,
+				787EB30D22914BB0006B84DC /* SBSCoreDataStack.h */,
+				787EB30E22914BB0006B84DC /* SBSCoreDataStack.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E6102E26AC2FB4AECF0E97CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				839B29683F1CB156676309CF /* Pods-SBSMovieDatabase.debug.xcconfig */,
+				286DC8E6B9D4E4534B24D68A /* Pods-SBSMovieDatabase.release.xcconfig */,
+				7862F0E33CB875E242FE7F07 /* Pods-SBSMovieDatabaseTests.debug.xcconfig */,
+				E5A916A4304137AF93150B9A /* Pods-SBSMovieDatabaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		787EB3202291604E006B84DC /* SBSMovieDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787EB3282291604E006B84DC /* Build configuration list for PBXNativeTarget "SBSMovieDatabaseTests" */;
+			buildPhases = (
+				E8140A6F8D1625BDA21F6C35 /* [CP] Check Pods Manifest.lock */,
+				787EB31D2291604E006B84DC /* Sources */,
+				787EB31E2291604E006B84DC /* Frameworks */,
+				787EB31F2291604E006B84DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				787EB3272291604E006B84DC /* PBXTargetDependency */,
+			);
+			name = SBSMovieDatabaseTests;
+			productName = SBSMovieDatabaseTests;
+			productReference = 787EB3212291604E006B84DC /* SBSMovieDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		788D4D452270DA30002074BC /* SBSMovieDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788D4D752270DA32002074BC /* Build configuration list for PBXNativeTarget "SBSMovieDatabase" */;
+			buildPhases = (
+				761CBAEFBA54609B50608876 /* [CP] Check Pods Manifest.lock */,
+				788D4D422270DA30002074BC /* Sources */,
+				788D4D432270DA30002074BC /* Frameworks */,
+				788D4D442270DA30002074BC /* Resources */,
+				787EB319229158F4006B84DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBSMovieDatabase;
+			productName = SBSMoviewDatabase;
+			productReference = 788D4D462270DA30002074BC /* SBSMovieDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		788D4D3E2270DA2F002074BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Igor;
+				TargetAttributes = {
+					787EB3202291604E006B84DC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 788D4D452270DA30002074BC;
+					};
+					788D4D452270DA30002074BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 788D4D412270DA2F002074BC /* Build configuration list for PBXProject "SBSMovieDatabase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 788D4D3D2270DA2F002074BC;
+			productRefGroup = 788D4D472270DA30002074BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				788D4D452270DA30002074BC /* SBSMovieDatabase */,
+				787EB3202291604E006B84DC /* SBSMovieDatabaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787EB31F2291604E006B84DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788D4D442270DA30002074BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788D4D592270DA32002074BC /* LaunchScreen.storyboard in Resources */,
+				788D4D562270DA32002074BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		761CBAEFBA54609B50608876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SBSMovieDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8140A6F8D1625BDA21F6C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SBSMovieDatabaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787EB31D2291604E006B84DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D7526C229167A2007A064E /* TestMovieService.m in Sources */,
+				787EB32C22916072006B84DC /* TestNetworkService.m in Sources */,
+				78D7526E22916A12007A064E /* TestCoreDataStack.m in Sources */,
+				78D752832291C9BA007A064E /* TestExecuteRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788D4D422270DA30002074BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788D4D852270E455002074BC /* UIColor+SBSCustomColors.m in Sources */,
+				781D61A4227F07D300AF0912 /* SBSMovieCollectionViewCell.m in Sources */,
+				78435E06228DCDC600534724 /* SBSCoreDataService.m in Sources */,
+				78435D402283763100534724 /* SBSMovieDetailViewController.m in Sources */,
+				78435D782286DA2F00534724 /* SBSDetailMovie.m in Sources */,
+				78435D4922856AEF00534724 /* SBSMovieDetailOverviewCell.m in Sources */,
+				784862EA227F6D43009642DC /* SBSMovieService.m in Sources */,
+				784862F522802A31009642DC /* UIImageView+SBSNetwork.m in Sources */,
+				788D4DCE2271C400002074BC /* SBSMenuBarCell.m in Sources */,
+				78435DFA228D7ACD00534724 /* SBSHomeCollectionViewHeader.m in Sources */,
+				78435D4622856A6A00534724 /* SBSMovieDetailInfoCell.m in Sources */,
+				78435DEE228C7D5A00534724 /* SBSSearchResultsViewController.m in Sources */,
+				788D4D802270DB3A002074BC /* SBSHomeViewController.m in Sources */,
+				78435D3D2283543600534724 /* SBSImageCache.m in Sources */,
+				78D7527E2291BDA1007A064E /* SBSFavouriteMovieCell.m in Sources */,
+				78D752752291A67B007A064E /* SBSTopRatedViewController.m in Sources */,
+				78435E0D228F48E000534724 /* SBSActor.m in Sources */,
+				788D4D542270DA30002074BC /* Model.xcdatamodeld in Sources */,
+				787EB30F22914BB0006B84DC /* SBSCoreDataStack.m in Sources */,
+				78435DD5228AF08A00534724 /* SBSFavouriteMoviesViewController.m in Sources */,
+				788D4D5C2270DA32002074BC /* main.m in Sources */,
+				78435E0A228F486300534724 /* SBSMovieDetailCastCell.m in Sources */,
+				78D752812291BF6F007A064E /* SBSTopRatedCell.m in Sources */,
+				784862E4227F6AEF009642DC /* SBSMovie.m in Sources */,
+				78435DEA228C191300534724 /* FavouriteMovie+CoreDataClass.m in Sources */,
+				78435DEB228C191300534724 /* FavouriteMovie+CoreDataProperties.m in Sources */,
+				78435DD9228AF11200534724 /* SBSBaseMovieCell.m in Sources */,
+				784862E7227F6D2A009642DC /* SBSNetworkService.m in Sources */,
+				788D4D4B2270DA30002074BC /* AppDelegate.m in Sources */,
+				78435D742286CB6E00534724 /* SBSMovieDetailRatingCell.m in Sources */,
+				788D4D882270F352002074BC /* SBSMenuBar.m in Sources */,
+				78D752892291E263007A064E /* SBSNetworkConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		787EB3272291604E006B84DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788D4D452270DA30002074BC /* SBSMovieDatabase */;
+			targetProxy = 787EB3262291604E006B84DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		788D4D572270DA32002074BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788D4D582270DA32002074BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		787EB3292291604E006B84DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7862F0E33CB875E242FE7F07 /* Pods-SBSMovieDatabaseTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBSMovieDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iukarpov.SBSMovieDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBSMovieDatabase.app/SBSMovieDatabase";
+			};
+			name = Debug;
+		};
+		787EB32A2291604E006B84DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A916A4304137AF93150B9A /* Pods-SBSMovieDatabaseTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SBSMovieDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iukarpov.SBSMovieDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBSMovieDatabase.app/SBSMovieDatabase";
+			};
+			name = Release;
+		};
+		788D4D732270DA32002074BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		788D4D742270DA32002074BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		788D4D762270DA32002074BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839B29683F1CB156676309CF /* Pods-SBSMovieDatabase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCW36J89FG;
+				INFOPLIST_FILE = "$(SRCROOT)/SBSMovieDatabase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iukarpov.SBSMovieDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		788D4D772270DA32002074BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286DC8E6B9D4E4534B24D68A /* Pods-SBSMovieDatabase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BCW36J89FG;
+				INFOPLIST_FILE = "$(SRCROOT)/SBSMovieDatabase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iukarpov.SBSMovieDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		787EB3282291604E006B84DC /* Build configuration list for PBXNativeTarget "SBSMovieDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				787EB3292291604E006B84DC /* Debug */,
+				787EB32A2291604E006B84DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788D4D412270DA2F002074BC /* Build configuration list for PBXProject "SBSMovieDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788D4D732270DA32002074BC /* Debug */,
+				788D4D742270DA32002074BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788D4D752270DA32002074BC /* Build configuration list for PBXNativeTarget "SBSMovieDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788D4D762270DA32002074BC /* Debug */,
+				788D4D772270DA32002074BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		788D4D522270DA30002074BC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				788D4D532270DA30002074BC /* SBSMoviewDatabase.xcdatamodel */,
+			);
+			currentVersion = 788D4D532270DA30002074BC /* SBSMoviewDatabase.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 788D4D3E2270DA2F002074BC /* Project object */;
+}
