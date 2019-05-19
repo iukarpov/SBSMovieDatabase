@@ -91,8 +91,8 @@
 		78435DA12288689C00534724 /* SetupMovieProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupMovieProtocol.h; sourceTree = "<group>"; };
 		78435DD3228AF08A00534724 /* SBSFavouriteMoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSFavouriteMoviesViewController.h; sourceTree = "<group>"; };
 		78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSFavouriteMoviesViewController.m; sourceTree = "<group>"; };
-		78435DD7228AF11200534724 /* SBSBaseMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBSBaseMovieCell.h; path = ViewControllers/SBSBaseMovieCell.h; sourceTree = "<group>"; };
-		78435DD8228AF11200534724 /* SBSBaseMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBSBaseMovieCell.m; path = ViewControllers/SBSBaseMovieCell.m; sourceTree = "<group>"; };
+		78435DD7228AF11200534724 /* SBSBaseMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSBaseMovieCell.h; sourceTree = "<group>"; };
+		78435DD8228AF11200534724 /* SBSBaseMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSBaseMovieCell.m; sourceTree = "<group>"; };
 		78435DE6228C191300534724 /* FavouriteMovie+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavouriteMovie+CoreDataProperties.h"; sourceTree = "<group>"; };
 		78435DE7228C191300534724 /* FavouriteMovie+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FavouriteMovie+CoreDataClass.h"; sourceTree = "<group>"; };
 		78435DE8228C191300534724 /* FavouriteMovie+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FavouriteMovie+CoreDataClass.m"; sourceTree = "<group>"; };
@@ -185,18 +185,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		781D619E227F008000AF0912 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				781D61A5227F514C00AF0912 /* MenuBar */,
-				781D61A2227F07D300AF0912 /* SBSMovieCollectionViewCell.h */,
-				781D61A3227F07D300AF0912 /* SBSMovieCollectionViewCell.m */,
-				78435DD7228AF11200534724 /* SBSBaseMovieCell.h */,
-				78435DD8228AF11200534724 /* SBSBaseMovieCell.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 		781D61A5227F514C00AF0912 /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,19 +216,6 @@
 				78D752882291E263007A064E /* SBSNetworkConstants.m */,
 			);
 			name = NetworkConstants;
-			sourceTree = "<group>";
-		};
-		781D61AD227F6A2500AF0912 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				784862E2227F6AEF009642DC /* SBSMovie.h */,
-				784862E3227F6AEF009642DC /* SBSMovie.m */,
-				78435D762286DA2F00534724 /* SBSDetailMovie.h */,
-				78435D772286DA2F00534724 /* SBSDetailMovie.m */,
-				78435E0B228F48E000534724 /* SBSActor.h */,
-				78435E0C228F48E000534724 /* SBSActor.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		78435D422284A46500534724 /* HomeViewController */ = {
@@ -281,17 +256,6 @@
 				78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */,
 			);
 			name = FavouriteMoviewViewController;
-			sourceTree = "<group>";
-		};
-		78435E07228F395600534724 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				784862F322802A31009642DC /* UIImageView+SBSNetwork.h */,
-				784862F422802A31009642DC /* UIImageView+SBSNetwork.m */,
-				788D4D832270E455002074BC /* UIColor+SBSCustomColors.h */,
-				788D4D842270E455002074BC /* UIColor+SBSCustomColors.m */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 		787EB31422914F1D006B84DC /* Frameworks */ = {
@@ -336,11 +300,11 @@
 		788D4D482270DA30002074BC /* SBSMovieDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				78D752902291F38E007A064E /* Categories */,
+				78D752922291F3CF007A064E /* View */,
+				78D752912291F3B4007A064E /* Model */,
 				78D7528E2291E897007A064E /* CoreData */,
-				78435E07228F395600534724 /* Categories */,
-				781D61AD227F6A2500AF0912 /* Model */,
 				781D61A6227F51D400AF0912 /* Service */,
-				781D619E227F008000AF0912 /* View */,
 				781D619A227EEAC200AF0912 /* ViewControllers */,
 				788D4D492270DA30002074BC /* AppDelegate.h */,
 				788D4D4A2270DA30002074BC /* AppDelegate.m */,
@@ -405,6 +369,42 @@
 				787EB30E22914BB0006B84DC /* SBSCoreDataStack.m */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		78D752902291F38E007A064E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				784862F322802A31009642DC /* UIImageView+SBSNetwork.h */,
+				784862F422802A31009642DC /* UIImageView+SBSNetwork.m */,
+				788D4D832270E455002074BC /* UIColor+SBSCustomColors.h */,
+				788D4D842270E455002074BC /* UIColor+SBSCustomColors.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		78D752912291F3B4007A064E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				784862E2227F6AEF009642DC /* SBSMovie.h */,
+				784862E3227F6AEF009642DC /* SBSMovie.m */,
+				78435D762286DA2F00534724 /* SBSDetailMovie.h */,
+				78435D772286DA2F00534724 /* SBSDetailMovie.m */,
+				78435E0B228F48E000534724 /* SBSActor.h */,
+				78435E0C228F48E000534724 /* SBSActor.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78D752922291F3CF007A064E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				781D61A5227F514C00AF0912 /* MenuBar */,
+				781D61A2227F07D300AF0912 /* SBSMovieCollectionViewCell.h */,
+				781D61A3227F07D300AF0912 /* SBSMovieCollectionViewCell.m */,
+				78435DD7228AF11200534724 /* SBSBaseMovieCell.h */,
+				78435DD8228AF11200534724 /* SBSBaseMovieCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E6102E26AC2FB4AECF0E97CC /* Pods */ = {
