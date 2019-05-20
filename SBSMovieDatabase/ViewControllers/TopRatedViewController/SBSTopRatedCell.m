@@ -22,7 +22,7 @@
 - (void)setupWithMovie:(SBSMovie *)movie
 {
     self.movieTitleLabel.text = movie.title;
-    [self.moviePosterImageView loadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
+    [self.moviePosterImageView sbsLoadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
 
 }
 

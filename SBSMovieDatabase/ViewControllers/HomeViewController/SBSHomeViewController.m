@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) SBSMenuBar *menuBar;
 @property (nonatomic, strong) UICollectionView *movieCollectionView;
-@property (nonatomic, strong) NSArray<SBSMovie *> *popularMovies;
+@property (nonatomic, copy) NSArray<SBSMovie *> *popularMovies;
 @property (nonatomic, strong) SBSMovieService *movieService;
 @property (nonatomic, strong) SBSSearchResultsViewController *searchResultsViewController;
 @end
@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNavigationBarViews];
+    [self applyBarTintColorToTheNavigationBar];
     [self fetchDataForCollectionView];
     [self setupMenuBar];
     [self setupMovieCollectionView];
@@ -35,7 +36,7 @@
 {
     self.menuBar = [SBSMenuBar new];
     self.menuBar.menuBarDelegate = self;
-    self.menuBar.backgroundColor = [UIColor secondaryColor];
+    self.menuBar.backgroundColor = [UIColor sbsBackgroundSecondaryColor];
     self.menuBar.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.menuBar];
 }
@@ -63,6 +64,16 @@
     self.navigationItem.rightBarButtonItem = customBarButtonItem;
 }
 
+- (void)applyBarTintColorToTheNavigationBar
+{
+    self.navigationController.navigationBar.barTintColor = [UIColor sbsNavigationBarTintColor];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    self.navigationController.navigationBar.tintColor = [UIColor sbsPrimaryTextColor];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = NO;
+}
+
 - (void)setupMovieCollectionView
 {
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
@@ -71,7 +82,7 @@
     self.movieCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.movieCollectionView.dataSource = self;
     self.movieCollectionView.delegate = self;
-    self.movieCollectionView.backgroundColor = [UIColor secondaryColor];
+    self.movieCollectionView.backgroundColor = [UIColor sbsBackgroundSecondaryColor];
     [self.movieCollectionView setShowsHorizontalScrollIndicator:NO];
     self.movieCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.movieCollectionView registerClass:[SBSMovieCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SBSMovieCollectionViewCell class])];

@@ -37,7 +37,7 @@
     _movieTitleLabel = [UILabel new];
     _movieTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieTitleLabel.numberOfLines = 0;
-    _movieTitleLabel.textColor = UIColor.primaryTextColor;
+    _movieTitleLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieTitleLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [_movieTitleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
     _movieTitleLabel.adjustsFontSizeToFitWidth = NO;
@@ -56,9 +56,10 @@
 
 - (void)setupWithMovie:(SBSDetailMovie *)movie
 {
-    _movieTitleLabel.text = movie.title;
-    _movieID = movie.movieID;
-    [_moviePosterImageView loadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
+    self.movieTitleLabel.text = movie.title;
+    self.movieID = movie.movieID;
+    [self.moviePosterImageView sbsLoadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
+
 }
 
 - (void)setupConstraints

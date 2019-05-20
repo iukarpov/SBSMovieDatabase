@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, strong) SBSMovieService *movieService;
-@property (nonatomic, strong) NSMutableArray<SBSMovie *> *movies;
+@property (nonatomic, copy) NSMutableArray<SBSMovie *> *movies;
 @end
 
 
@@ -44,7 +44,7 @@
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    self.collectionView.backgroundColor = [UIColor primaryColor];
+    self.collectionView.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     [self.collectionView setShowsHorizontalScrollIndicator:NO];
     self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.collectionView registerClass:[SBSMovieCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SBSMovieCollectionViewCell class])];

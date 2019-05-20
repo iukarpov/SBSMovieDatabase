@@ -24,7 +24,7 @@
 
 - (void)configureCell
 {
-    self.backgroundColor = UIColor.primaryColor;
+    self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     [self setupMovieRatingLabel];
     [self setupStarImageView];
@@ -51,7 +51,7 @@
     _movieRatingLabel = [UILabel new];
     _movieRatingLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieRatingLabel.numberOfLines = 0;
-    _movieRatingLabel.textColor = UIColor.primaryTextColor;
+    _movieRatingLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieRatingLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [_movieRatingLabel.heightAnchor constraintEqualToConstant:20].active = YES;
 }
@@ -61,7 +61,7 @@
     _movieVotesLabel = [UILabel new];
     _movieVotesLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieVotesLabel.numberOfLines = 0;
-    _movieVotesLabel.textColor = UIColor.secondaryTextColor;
+    _movieVotesLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieVotesLabel setFont:[UIFont boldSystemFontOfSize:12]];
     [_movieVotesLabel.heightAnchor constraintEqualToConstant:20].active = YES;
 }
@@ -70,7 +70,7 @@
     _movieBudgetLabel = [UILabel new];
     _movieBudgetLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieBudgetLabel.numberOfLines = 0;
-    _movieBudgetLabel.textColor = UIColor.secondaryTextColor;
+    _movieBudgetLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieBudgetLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [self.contentView addSubview:_movieBudgetLabel];
 }
@@ -80,7 +80,7 @@
     _movieRevenueLabel = [UILabel new];
     _movieRevenueLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieRevenueLabel.numberOfLines = 0;
-    _movieRevenueLabel.textColor = UIColor.secondaryTextColor;
+    _movieRevenueLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieRevenueLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [self.contentView addSubview:_movieRevenueLabel];
     
@@ -127,9 +127,9 @@
 {
     NSString *sourceString = [NSString stringWithFormat:@"%@%@", ls, rs];
     NSMutableAttributedString *attributedString =[[NSMutableAttributedString alloc] initWithString:sourceString];
-    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor primaryTextColor] range:[sourceString rangeOfString:ls]];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor sbsPrimaryTextColor] range:[sourceString rangeOfString:ls]];
     [attributedString addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:fontSize] range:[sourceString rangeOfString:ls]];
-    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor secondaryTextColor] range:[sourceString rangeOfString:rs]];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor sbsSecondaryTextColor] range:[sourceString rangeOfString:rs]];
     return attributedString;
 }
 

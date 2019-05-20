@@ -12,24 +12,29 @@
 
 @implementation UIColor(SBSCustomColors)
 
-+ (UIColor *)primaryColor
++ (UIColor *)sbsBackgroundPrimaryColor
 {
     return [UIColor colorWithRed:31/255.0 green:30/255.0 blue:30/255.0 alpha:1.0];
 }
 
-+ (UIColor *)secondaryColor
++ (UIColor *)sbsBackgroundSecondaryColor
 {
     return [UIColor colorWithRed:52/255.0 green:54/255.0 blue:60/255.0 alpha:1.0];
 }
 
-+ (UIColor *)primaryTextColor
++ (UIColor *)sbsPrimaryTextColor
 {
     return [UIColor whiteColor];
 }
 
-+ (UIColor *)secondaryTextColor
++ (UIColor *)sbsSecondaryTextColor
 {
     return [UIColor lightGrayColor];
+}
+
++ (UIColor *)sbsNavigationBarTintColor
+{
+    return [UIColor colorWithRed:72/255.0 green:74/255.0 blue:81/255.0 alpha:1.0];
 }
 
 @end

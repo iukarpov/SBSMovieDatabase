@@ -16,7 +16,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = UIColor.primaryColor;
+        self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
         [self setupMenuBarTitle];
         [self setupConstraints];
     }
@@ -26,7 +26,7 @@
 - (void)setupMenuBarTitle
 {
     _headerTitleLabel = [[UILabel alloc]initWithFrame:CGRectZero];
-    _headerTitleLabel.textColor = UIColor.primaryTextColor;
+    _headerTitleLabel.textColor = UIColor.sbsPrimaryTextColor;
     _headerTitleLabel.textAlignment = NSTextAlignmentCenter;
     [_headerTitleLabel setFont:[UIFont boldSystemFontOfSize:18]];
     _headerTitleLabel.text = @"Popular";

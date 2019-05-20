@@ -24,7 +24,7 @@
 
 - (void)configureCell
 {
-    self.backgroundColor = UIColor.primaryColor;
+    self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     [self setupMovieOverviewLabel];
     [self setupConstraints];
@@ -34,7 +34,7 @@
     _movieOverviewLabel = [UILabel new];
     _movieOverviewLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieOverviewLabel.numberOfLines = 3;
-    _movieOverviewLabel.textColor = UIColor.primaryTextColor;
+    _movieOverviewLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieOverviewLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [_movieOverviewLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieOverviewLabel];

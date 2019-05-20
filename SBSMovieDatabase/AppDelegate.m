@@ -23,12 +23,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen.mainScreen bounds]];
     SBSHomeViewController *startViewController = [SBSHomeViewController new];
     UINavigationController *appNavigationController = [[UINavigationController alloc] initWithRootViewController:startViewController];
-    appNavigationController.navigationBar.barTintColor = [UIColor colorWithRed:72/255.0 green:74/255.0 blue:81/255.0 alpha:1.0];
-    [appNavigationController.navigationBar
-     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    appNavigationController.navigationBar.tintColor = [UIColor primaryTextColor];
-    appNavigationController.navigationBar.shadowImage = [UIImage new];
-    appNavigationController.navigationBar.translucent = NO;    
     self.window.rootViewController = appNavigationController;
     [self.window makeKeyAndVisible];
     return YES;

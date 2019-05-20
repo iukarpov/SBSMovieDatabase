@@ -15,10 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor(SBSCustomColors)
 
-+ (UIColor *)primaryColor;
-+ (UIColor *)secondaryColor;
-+ (UIColor *)primaryTextColor;
-+ (UIColor *)secondaryTextColor;
++ (UIColor *)sbsBackgroundPrimaryColor;
++ (UIColor *)sbsBackgroundSecondaryColor;
++ (UIColor *)sbsPrimaryTextColor;
++ (UIColor *)sbsSecondaryTextColor;
++ (UIColor *)sbsNavigationBarTintColor;
 @end
 
 NS_ASSUME_NONNULL_END

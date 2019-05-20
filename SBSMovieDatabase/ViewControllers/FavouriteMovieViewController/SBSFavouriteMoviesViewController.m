@@ -39,7 +39,7 @@
     _favouriteMoviesTableView.estimatedRowHeight = 150;
     _favouriteMoviesTableView.separatorInset = UIEdgeInsetsZero;
     _favouriteMoviesTableView.translatesAutoresizingMaskIntoConstraints = NO;
-    _favouriteMoviesTableView.backgroundColor = UIColor.primaryColor;
+    _favouriteMoviesTableView.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     [_favouriteMoviesTableView registerClass:[SBSFavouriteMovieCell class] forCellReuseIdentifier:NSStringFromClass([SBSFavouriteMovieCell class])];
     [self.view addSubview:self.favouriteMoviesTableView];
 }

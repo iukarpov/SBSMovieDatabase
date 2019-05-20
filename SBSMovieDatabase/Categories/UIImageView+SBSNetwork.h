@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImageView(SBSNetwork)
 
 @property (nonatomic, copy) NSURL *imageURL;
-- (void) loadImageFromURL:(NSURL*)url;
+
+- (void)sbsLoadImageFromURL:(NSURL*)url;
 @end
 
 NS_ASSUME_NONNULL_END

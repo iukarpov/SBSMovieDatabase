@@ -18,7 +18,7 @@
     {
         return nil;
     }
-    NSURLComponents *urlComponents = [NSURLComponents componentsWithString:BaseUrlString];
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithString:SBSBaseUrlString];
     urlComponents.path = path;
     urlComponents.queryItems = [@[] arrayByAddingObjectsFromArray:queryItems];
     NSLog(@"URL: %@", urlComponents.URL);
@@ -64,7 +64,7 @@
     {
         return nil;
     }
-    NSURL *url = [NSURL URLWithString:[ImageUrl stringByAppendingString:path]];
+    NSURL *url = [NSURL URLWithString:[SBSImageUrl stringByAppendingString:path]];
     return url;
 }
 

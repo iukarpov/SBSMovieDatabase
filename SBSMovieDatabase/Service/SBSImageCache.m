@@ -47,47 +47,22 @@ static NSCache *imageCache;
 
 - (BOOL)addImage:(UIImage *)image toCacheForURL:(NSURL *)imageURL
 {
-    @try
-    {
-        [imageCache setObject:image forKey:imageURL.absoluteString];
-        return YES;
-    }
-    @catch (NSException *exception)
-    {
-        NSLog(@"Unable to cache image. Fail with exception - %@", exception);
-        return NO;
-    }
-    return NO;
+    [imageCache setObject:image forKey:imageURL.absoluteString];
+    return YES;
+    
 }
 
 - (BOOL)removeImageFromCacheForURL:(NSURL *)imageURL
 {
-    @try
-    {
-        [imageCache removeObjectForKey:imageURL.absoluteString];
-        return  YES;
-    }
-    @catch (NSException *exception)
-    {
-        NSLog(@"Unable to remove image from cache. Fail with exception - %@", exception);
-        return NO;
-    }
-    return NO;
+    [imageCache removeObjectForKey:imageURL.absoluteString];
+    return  YES;
 }
 
 - (BOOL)removeAllImagesFromCache
 {
-    @try
-    {
-        [imageCache removeAllObjects];
-        return YES;
-    }
-    @catch (NSException *exception)
-    {
-        NSLog(@"Unable to remove images from cache. Fail with exception - %@", exception);
-        return NO;
-    }
-    return NO;
+    [imageCache removeAllObjects];
+    return YES;
 }
 
 @end
+

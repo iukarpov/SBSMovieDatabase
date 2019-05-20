@@ -24,7 +24,7 @@
 
 - (void)configureCell
 {
-    self.backgroundColor = UIColor.primaryColor;
+    self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     [self setupMoviePosterImageView];
     [self setupMovieTitleLabel];
     [self setupMovieReleaseDateLabel];
@@ -50,7 +50,7 @@
     _movieTitleLabel = [UILabel new];
     _movieTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieTitleLabel.numberOfLines = 0;
-    _movieTitleLabel.textColor = UIColor.primaryTextColor;
+    _movieTitleLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieReleaseDateLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [_movieTitleLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [self.contentView addSubview:_movieTitleLabel];
@@ -61,7 +61,7 @@
     _movieReleaseDateLabel = [UILabel new];
     _movieReleaseDateLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieReleaseDateLabel.numberOfLines = 0;
-    _movieReleaseDateLabel.textColor = UIColor.primaryTextColor;
+    _movieReleaseDateLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieReleaseDateLabel setFont:[UIFont systemFontOfSize:12]];
     [_movieReleaseDateLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieReleaseDateLabel];
@@ -72,7 +72,7 @@
     _movieGenreLabel = [UILabel new];
     _movieGenreLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieGenreLabel.numberOfLines = 0;
-    _movieGenreLabel.textColor = UIColor.secondaryTextColor;
+    _movieGenreLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieGenreLabel setFont:[UIFont systemFontOfSize:12]];
     [_movieGenreLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieGenreLabel];
@@ -83,7 +83,7 @@
     _movieDurationLabel = [UILabel new];
     _movieDurationLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieDurationLabel.numberOfLines = 0;
-    _movieDurationLabel.textColor = UIColor.secondaryTextColor;
+    _movieDurationLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieDurationLabel setFont:[UIFont systemFontOfSize:12]];
     [_movieDurationLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieDurationLabel];
@@ -94,7 +94,7 @@
     _movieRatingLabel = [UILabel new];
     _movieRatingLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieRatingLabel.numberOfLines = 0;
-    _movieRatingLabel.textColor = UIColor.secondaryTextColor;
+    _movieRatingLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieRatingLabel setFont:[UIFont systemFontOfSize:12]];
     [_movieRatingLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieRatingLabel];

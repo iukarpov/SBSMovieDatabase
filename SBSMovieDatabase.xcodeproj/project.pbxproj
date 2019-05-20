@@ -45,7 +45,6 @@
 		78D7527E2291BDA1007A064E /* SBSFavouriteMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */; };
 		78D752812291BF6F007A064E /* SBSTopRatedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752802291BF6F007A064E /* SBSTopRatedCell.m */; };
 		78D752832291C9BA007A064E /* TestExecuteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752822291C9BA007A064E /* TestExecuteRequest.m */; };
-		78D752892291E263007A064E /* SBSNetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D752882291E263007A064E /* SBSNetworkConstants.m */; };
 		EF1A21C7247751E6CDAD5977 /* libPods-SBSMovieDatabaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8156EC0070A2024EAEB72E /* libPods-SBSMovieDatabaseTests.a */; };
 /* End PBXBuildFile section */
 
@@ -147,7 +146,7 @@
 		78D7527F2291BF6F007A064E /* SBSTopRatedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSTopRatedCell.h; sourceTree = "<group>"; };
 		78D752802291BF6F007A064E /* SBSTopRatedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSTopRatedCell.m; sourceTree = "<group>"; };
 		78D752822291C9BA007A064E /* TestExecuteRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestExecuteRequest.m; sourceTree = "<group>"; };
-		78D752882291E263007A064E /* SBSNetworkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSNetworkConstants.m; sourceTree = "<group>"; };
+		78D752932292E52F007A064E /* SBSNetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSNetworkConstants.h; sourceTree = "<group>"; };
 		839B29683F1CB156676309CF /* Pods-SBSMovieDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabase.debug.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabase/Pods-SBSMovieDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 		8A8156EC0070A2024EAEB72E /* libPods-SBSMovieDatabaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBSMovieDatabaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A916A4304137AF93150B9A /* Pods-SBSMovieDatabaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBSMovieDatabaseTests.release.xcconfig"; path = "Target Support Files/Pods-SBSMovieDatabaseTests/Pods-SBSMovieDatabaseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,10 +175,10 @@
 		781D619A227EEAC200AF0912 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				78D7528A2291E3BE007A064E /* SearchViewController */,
+				78D7529B2292EC3B007A064E /* FavouriteMovieViewController */,
+				78D7529A2292EC25007A064E /* HomeViewController */,
+				78D752982292EC08007A064E /* SearchViewController */,
 				78D752722291A65B007A064E /* TopRatedViewController */,
-				78435D422284A46500534724 /* HomeViewController */,
-				78435DD6228AF09700534724 /* FavouriteMoviewViewController */,
 				78435D432284A47500534724 /* MovieDetailViewController */,
 			);
 			path = ViewControllers;
@@ -199,7 +198,7 @@
 		781D61A6227F51D400AF0912 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				781D61A7227F51F400AF0912 /* NetworkConstants */,
+				78D752972292EBF0007A064E /* NetworkConstants */,
 				78435D3B2283543600534724 /* SBSImageCache.h */,
 				78435D3C2283543600534724 /* SBSImageCache.m */,
 				784862E5227F6D2A009642DC /* SBSNetworkService.h */,
@@ -208,25 +207,6 @@
 				784862E9227F6D43009642DC /* SBSMovieService.m */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		781D61A7227F51F400AF0912 /* NetworkConstants */ = {
-			isa = PBXGroup;
-			children = (
-				78D752882291E263007A064E /* SBSNetworkConstants.m */,
-			);
-			name = NetworkConstants;
-			sourceTree = "<group>";
-		};
-		78435D422284A46500534724 /* HomeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				788D4D7E2270DB3A002074BC /* SBSHomeViewController.h */,
-				788D4D7F2270DB3A002074BC /* SBSHomeViewController.m */,
-				78435DF8228D7ACD00534724 /* SBSHomeCollectionViewHeader.h */,
-				78435DF9228D7ACD00534724 /* SBSHomeCollectionViewHeader.m */,
-			);
-			name = HomeViewController;
 			sourceTree = "<group>";
 		};
 		78435D432284A47500534724 /* MovieDetailViewController */ = {
@@ -245,17 +225,6 @@
 				78435E09228F486300534724 /* SBSMovieDetailCastCell.m */,
 			);
 			path = MovieDetailViewController;
-			sourceTree = "<group>";
-		};
-		78435DD6228AF09700534724 /* FavouriteMoviewViewController */ = {
-			isa = PBXGroup;
-			children = (
-				78435DD3228AF08A00534724 /* SBSFavouriteMoviesViewController.h */,
-				78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */,
-				78D7527C2291BDA1007A064E /* SBSFavouriteMovieCell.h */,
-				78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */,
-			);
-			name = FavouriteMoviewViewController;
 			sourceTree = "<group>";
 		};
 		787EB31422914F1D006B84DC /* Frameworks */ = {
@@ -345,15 +314,6 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		78D7528A2291E3BE007A064E /* SearchViewController */ = {
-			isa = PBXGroup;
-			children = (
-				78435DEC228C7D5A00534724 /* SBSSearchResultsViewController.h */,
-				78435DED228C7D5A00534724 /* SBSSearchResultsViewController.m */,
-			);
-			name = SearchViewController;
-			sourceTree = "<group>";
-		};
 		78D7528E2291E897007A064E /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +365,45 @@
 				78435DD8228AF11200534724 /* SBSBaseMovieCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		78D752972292EBF0007A064E /* NetworkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				78D752932292E52F007A064E /* SBSNetworkConstants.h */,
+			);
+			path = NetworkConstants;
+			sourceTree = "<group>";
+		};
+		78D752982292EC08007A064E /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78435DEC228C7D5A00534724 /* SBSSearchResultsViewController.h */,
+				78435DED228C7D5A00534724 /* SBSSearchResultsViewController.m */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		78D7529A2292EC25007A064E /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				788D4D7E2270DB3A002074BC /* SBSHomeViewController.h */,
+				788D4D7F2270DB3A002074BC /* SBSHomeViewController.m */,
+				78435DF8228D7ACD00534724 /* SBSHomeCollectionViewHeader.h */,
+				78435DF9228D7ACD00534724 /* SBSHomeCollectionViewHeader.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		78D7529B2292EC3B007A064E /* FavouriteMovieViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78435DD3228AF08A00534724 /* SBSFavouriteMoviesViewController.h */,
+				78435DD4228AF08A00534724 /* SBSFavouriteMoviesViewController.m */,
+				78D7527C2291BDA1007A064E /* SBSFavouriteMovieCell.h */,
+				78D7527D2291BDA1007A064E /* SBSFavouriteMovieCell.m */,
+			);
+			path = FavouriteMovieViewController;
 			sourceTree = "<group>";
 		};
 		E6102E26AC2FB4AECF0E97CC /* Pods */ = {
@@ -609,7 +608,6 @@
 				788D4D4B2270DA30002074BC /* AppDelegate.m in Sources */,
 				78435D742286CB6E00534724 /* SBSMovieDetailRatingCell.m in Sources */,
 				788D4D882270F352002074BC /* SBSMenuBar.m in Sources */,
-				78D752892291E263007A064E /* SBSNetworkConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

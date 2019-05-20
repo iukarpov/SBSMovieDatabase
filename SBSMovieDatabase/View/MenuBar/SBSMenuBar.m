@@ -30,7 +30,7 @@
     self.menuBarTitles = @[@"Profile" ,@"Top Rated" ,@"Favourite"];
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     self.menuCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-    self.menuCollectionView.backgroundColor = [UIColor secondaryColor];
+    self.menuCollectionView.backgroundColor = [UIColor sbsBackgroundSecondaryColor];
     self.menuCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     self.menuCollectionView.delegate = self;
     self.menuCollectionView.dataSource = self;

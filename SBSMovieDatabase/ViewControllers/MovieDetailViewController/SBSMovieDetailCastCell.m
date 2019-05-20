@@ -24,7 +24,7 @@
 
 - (void) configureCell
 {
-    self.backgroundColor = UIColor.primaryColor;
+    self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     [self setupActorImageView];
     [self setupActorNameLabel];
     [self setupActorRoleLabel];
@@ -45,7 +45,7 @@
     _actorNameLabel = [UILabel new];
     _actorNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _actorNameLabel.numberOfLines = 0;
-    _actorNameLabel.textColor = UIColor.primaryTextColor;
+    _actorNameLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_actorNameLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [_actorNameLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [self.contentView addSubview:_actorNameLabel];
@@ -56,7 +56,7 @@
     _actorRoleLabel = [UILabel new];
     _actorRoleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _actorRoleLabel.numberOfLines = 0;
-    _actorRoleLabel.textColor = UIColor.secondaryTextColor;
+    _actorRoleLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_actorRoleLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [_actorRoleLabel setFont:[UIFont boldSystemFontOfSize:12]];
     [self.contentView addSubview:_actorRoleLabel];
@@ -68,7 +68,7 @@
     self.actorRoleLabel.text = actor.character;
     if (actor.profilePath)
     {
-        [self.actorImageView loadImageFromURL:[SBSNetworkService createImageUrlForPath:actor.profilePath]];
+        [self.actorImageView sbsLoadImageFromURL:[SBSNetworkService createImageUrlForPath:actor.profilePath]];
     }
 }
 

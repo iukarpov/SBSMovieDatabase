@@ -58,7 +58,7 @@
     [super viewDidLoad];
     SBSCoreDataStack *coreDataStack = [SBSCoreDataStack new];
     self.coreDataService = [[SBSCoreDataService alloc] initWithCoreDataStack:coreDataStack];    self.favMovie = [self.coreDataService findFavouriteMovieWithId:self.movieID];
-    self.navigationItem.backBarButtonItem.tintColor = [UIColor primaryTextColor];
+    self.navigationItem.backBarButtonItem.tintColor = [UIColor sbsPrimaryTextColor];
     [self fetchMovieData];
     [self setupMovieDetailTableView];
     [self setupConstraints];
@@ -71,7 +71,7 @@
     self.movieDetailTableView.dataSource = self;
     self.movieDetailTableView.separatorInset = UIEdgeInsetsZero;
     self.movieDetailTableView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.movieDetailTableView.backgroundColor = UIColor.primaryColor;
+    self.movieDetailTableView.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     self.movieDetailTableView.estimatedRowHeight = 100;
     self.movieDetailTableView.rowHeight = UITableViewAutomaticDimension;
     [self registerTableViewCells];
@@ -126,9 +126,9 @@
         UILabel *headerTitle = [[UILabel alloc] initWithFrame:CGRectMake(10, 12, tableView.frame.size.width, 15)];
         [headerTitle setFont:[UIFont boldSystemFontOfSize:16]];
         headerTitle.text = @"Cast";
-        headerTitle.textColor = UIColor.primaryTextColor;
+        headerTitle.textColor = UIColor.sbsPrimaryTextColor;
         [headerView addSubview:headerTitle];
-        [headerView setBackgroundColor:UIColor.secondaryColor];
+        [headerView setBackgroundColor:UIColor.sbsBackgroundSecondaryColor];
         return headerView;
     }
     UIView *emptyHeader = [[UIView alloc] initWithFrame:CGRectZero];

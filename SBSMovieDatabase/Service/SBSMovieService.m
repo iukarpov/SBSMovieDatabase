@@ -23,24 +23,24 @@
 
 - (NSMutableURLRequest *)fetchPopularMoviesRequest
 {
-    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:ApiKey], [NSURLQueryItem queryItemWithName:@"sort_by" value:@"popularity.desc"]];
-    NSURL* url = [self.networkService createUrlWithPath:DiscoverMoviePath withQueryItems:queryItems];
+    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:SBSApiKey], [NSURLQueryItem queryItemWithName:@"sort_by" value:@"popularity.desc"]];
+    NSURL* url = [self.networkService createUrlWithPath:SBSDiscoverMoviePath withQueryItems:queryItems];
     NSMutableURLRequest* request = [self.networkService createRequestWithMethod:@"GET" forURL:url];
     return  request;
 }
 
 - (NSMutableURLRequest *)fetchMovieWithTitle:(NSString *)title
 {
-    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:ApiKey], [NSURLQueryItem queryItemWithName:@"query" value:title]];
-    NSURL* url = [self.networkService createUrlWithPath:MovieWithTitlePath withQueryItems:queryItems];
+    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:SBSApiKey], [NSURLQueryItem queryItemWithName:@"query" value:title]];
+    NSURL* url = [self.networkService createUrlWithPath:SBSMovieWithTitlePath withQueryItems:queryItems];
     NSMutableURLRequest* request = [self.networkService createRequestWithMethod:@"GET" forURL:url];
     return  request;
 }
 
 - (NSMutableURLRequest *)fetchTopRatedMovies
 {
-    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:ApiKey]];
-    NSURL* url = [self.networkService createUrlWithPath:TopRatedMoviePath withQueryItems:queryItems];
+    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:SBSApiKey]];
+    NSURL* url = [self.networkService createUrlWithPath:SBSTopRatedMoviePath withQueryItems:queryItems];
     NSMutableURLRequest* request = [self.networkService createRequestWithMethod:@"GET" forURL:url];
     return  request;
 }
@@ -71,8 +71,8 @@
 
 - (void)fetchDetailMovieInfoWithID:(NSString *)movieID andCompletionHandler:(void (^)(SBSDetailMovie *movie))completionHandler
 {
-    NSString *path = [NSString stringWithFormat:@"%@/%@", DetailMovieInfoPath, movieID];
-    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:ApiKey], [NSURLQueryItem queryItemWithName:@"append_to_response" value:@"credits"],[NSURLQueryItem queryItemWithName:@"language" value:@"en-US"]];
+    NSString *path = [NSString stringWithFormat:@"%@/%@", SBSDetailMovieInfoPath, movieID];
+    NSArray<NSURLQueryItem *> *queryItems = @[[NSURLQueryItem queryItemWithName:@"api_key" value:SBSApiKey], [NSURLQueryItem queryItemWithName:@"append_to_response" value:@"credits"],[NSURLQueryItem queryItemWithName:@"language" value:@"en-US"]];
     NSURL* url = [self.networkService createUrlWithPath:path withQueryItems:queryItems];
     NSMutableURLRequest* request = [self.networkService createRequestWithMethod:@"GET" forURL:url];
     [self.networkService executeRequest:request withCompletionHandler:^(id responseData, NSError *error)

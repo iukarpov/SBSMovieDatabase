@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, MovieCellType)
 @property (nonatomic, copy) NSString *tagline;
 @property (nonatomic, assign) double voteAverage;
 @property (nonatomic, assign) NSUInteger voteCount;
-@property (nonatomic, strong) NSArray <SBSActor *> *cast;
+@property (nonatomic, copy) NSArray <SBSActor *> *cast;
 
 + (SBSDetailMovie *)moviesFromDictionaries:(NSDictionary *)movieDictionary;
 @end

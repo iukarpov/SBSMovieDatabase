@@ -24,7 +24,7 @@
 
 - (void)configureCell
 {
-    self.backgroundColor = UIColor.primaryColor;
+    self.backgroundColor = UIColor.sbsBackgroundPrimaryColor;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     [self setupMoviePosterImageView];
     [self setupMovieTitleLabel];
@@ -51,7 +51,7 @@
     _movieTitleLabel = [UILabel new];
     _movieTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieTitleLabel.numberOfLines = 0;
-    _movieTitleLabel.textColor = UIColor.primaryTextColor;
+    _movieTitleLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieTitleLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [_movieTitleLabel setFont:[UIFont boldSystemFontOfSize:18]];
     [self.contentView addSubview:_movieTitleLabel];
@@ -62,7 +62,7 @@
     _movieReleaseDateLabel = [UILabel new];
     _movieReleaseDateLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieReleaseDateLabel.numberOfLines = 0;
-    _movieReleaseDateLabel.textColor = UIColor.primaryTextColor;
+    _movieReleaseDateLabel.textColor = UIColor.sbsPrimaryTextColor;
     [_movieReleaseDateLabel setFont:[UIFont boldSystemFontOfSize:14]];
     [_movieReleaseDateLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieReleaseDateLabel];
@@ -73,7 +73,7 @@
     _movieGenreLabel = [UILabel new];
     _movieGenreLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieGenreLabel.numberOfLines = 0;
-    _movieGenreLabel.textColor = UIColor.secondaryTextColor;
+    _movieGenreLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieGenreLabel setFont:[UIFont boldSystemFontOfSize:12]];
     [_movieGenreLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieGenreLabel];
@@ -84,7 +84,7 @@
     _movieDurationLabel = [UILabel new];
     _movieDurationLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieDurationLabel.numberOfLines = 0;
-    _movieDurationLabel.textColor = UIColor.secondaryTextColor;
+    _movieDurationLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieDurationLabel setFont:[UIFont italicSystemFontOfSize:12]];
     [_movieDurationLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieDurationLabel];
@@ -95,7 +95,7 @@
     _movieTaglineLabel = [UILabel new];
     _movieTaglineLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _movieTaglineLabel.numberOfLines = 0;
-    _movieTaglineLabel.textColor = UIColor.secondaryTextColor;
+    _movieTaglineLabel.textColor = UIColor.sbsSecondaryTextColor;
     [_movieTaglineLabel setFont:[UIFont italicSystemFontOfSize:12]];
     [_movieTaglineLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [self.contentView addSubview:_movieTaglineLabel];
@@ -138,7 +138,7 @@
     }
     if (movie.posterPath)
     {
-        [self.moviePosterImageView loadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
+        [self.moviePosterImageView sbsLoadImageFromURL:[SBSNetworkService createImageUrlForPath:movie.posterPath]];
     }
 }
 

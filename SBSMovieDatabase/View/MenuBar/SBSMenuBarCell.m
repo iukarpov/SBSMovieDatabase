@@ -39,7 +39,7 @@
 - (void)setupMenuBarTitle
 {
     _menuBarTitle = [[UILabel alloc]initWithFrame:CGRectZero];
-    _menuBarTitle.textColor = UIColor.primaryTextColor;
+    _menuBarTitle.textColor = UIColor.sbsPrimaryTextColor;
     _menuBarTitle.textAlignment = NSTextAlignmentCenter;
     _menuBarTitle.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:_menuBarTitle];

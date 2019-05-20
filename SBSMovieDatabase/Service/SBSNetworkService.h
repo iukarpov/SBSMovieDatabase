@@ -8,8 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "SBSNetworkConstants.m"
-
+#import "SBSNetworkConstants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

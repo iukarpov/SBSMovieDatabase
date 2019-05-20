@@ -7,6 +7,7 @@
 //
 
 
+
 #import "UIImageView+SBSNetwork.h"
 #import <objc/runtime.h>
 
@@ -18,7 +19,7 @@ static char URL_KEY;
 
 @dynamic imageURL;
 
-- (void)loadImageFromURL:(NSURL *)url
+- (void)sbsLoadImageFromURL:(NSURL *)url
 {
     if (!url)
     {
@@ -35,6 +36,7 @@ static char URL_KEY;
     dispatch_async(queue, ^{
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *imageFromData = [UIImage imageWithData:data];
+        NSLog(@"1111%@",self.imageURL);
         [imageCache addImage:imageFromData toCacheForURL:self.imageURL];
         if (imageFromData)
         {
@@ -61,4 +63,5 @@ static char URL_KEY;
 }
 
 @end
+
 

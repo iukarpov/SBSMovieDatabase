@@ -12,7 +12,7 @@
 
 @interface SBSTopRatedViewController ()
 
-@property (nonatomic, strong) NSArray<SBSMovie *> *topRatedMovies;
+@property (nonatomic, copy) NSArray<SBSMovie *> *topRatedMovies;
 @end
 
 
